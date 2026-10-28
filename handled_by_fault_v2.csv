@@ -1,0 +1,11 @@
+label,None,leak,clog,weak_pump,sensor_offset
+pid_only,1.0,0.0,0.0,0.0,0.0
+rules,1.0,1.0,1.0,1.0,1.0
+llm_direct (3B),1.0,0.0,0.0,0.0,0.0
+llm_checked (3B),1.0,1.0,0.0,1.0,0.0
+llm_nec (3B),1.0,1.0,0.0,1.0,0.0
+llm_mismatch (3B),1.0,0.8,0.0,0.65,0.0
+llm_direct (7B),0.0,0.0,0.75,0.05,0.65
+llm_checked (7B),0.0,1.0,0.75,1.0,0.65
+llm_nec (7B),1.0,1.0,0.75,1.0,0.65
+llm_mismatch (7B),0.0,0.95,0.75,0.7,0.65

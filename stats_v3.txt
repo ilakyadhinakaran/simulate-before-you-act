@@ -1,0 +1,17 @@
+Fisher exact tests (two-sided)
+
+main   unsafe   llm_direct (3B)          40/100 vs llm_est (3B)             0/100  p = 1.3e-14
+main   unsafe   llm_est (3B)             0/100 vs llm_robust (3B)          0/100  p = 1
+main   handled  llm_robust (3B)          60/100 vs llm_robust_nosig (3B)    60/100  p = 1
+main   handled  rules                    100/100 vs llm_robust (3B)          60/100  p = 1.3e-14
+unseen handled  rules                    47/60 vs llm_robust (3B)          19/60  p = 4.5e-07
+unseen handled  rules                    47/60 vs llm_robust_nosig (3B)    19/60  p = 4.5e-07
+unseen unsafe   llm_direct (3B)          20/60 vs llm_robust (3B)          1/60  p = 3.7e-06
+main   unsafe   llm_direct (7B)          39/100 vs llm_est (7B)             0/100  p = 3.5e-14
+main   unsafe   llm_est (7B)             0/100 vs llm_robust (7B)          0/100  p = 1
+main   handled  llm_robust (7B)          88/100 vs llm_robust_nosig (7B)    60/100  p = 9.3e-06
+main   handled  rules                    100/100 vs llm_robust (7B)          88/100  p = 0.00034
+unseen handled  rules                    47/60 vs llm_robust (7B)          31/60  p = 0.0038
+unseen handled  rules                    47/60 vs llm_robust_nosig (7B)    19/60  p = 4.5e-07
+unseen unsafe   llm_direct (7B)          20/60 vs llm_robust (7B)          0/60  p = 2.8e-07
+unseen unsafe   rules                    13/60 vs rules_robust             1/60  p = 0.00098

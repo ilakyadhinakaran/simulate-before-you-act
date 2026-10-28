@@ -1,0 +1,16 @@
+Fisher exact tests (two-sided)
+
+unsafe   llm_direct (3B)        40/100  vs  llm_checked (3B)       0/100   p = 1.3e-14
+handled  llm_direct (3B)        20/100  vs  llm_checked (3B)       60/100   p = 1.1e-08
+handled  pid_only               20/100  vs  llm_checked (3B)       60/100   p = 1.1e-08
+handled  rules                  100/100  vs  llm_checked (3B)       60/100   p = 1.3e-14
+handled  rules                  100/100  vs  llm_nec (3B)           60/100   p = 1.3e-14
+handled  llm_checked (3B)       60/100  vs  llm_nec (3B)           60/100   p = 1
+unsafe   llm_checked (3B)       0/100  vs  llm_mismatch (3B)      11/100   p = 0.00073
+unsafe   llm_direct (7B)        39/100  vs  llm_checked (7B)       0/100   p = 3.5e-14
+handled  llm_direct (7B)        29/100  vs  llm_checked (7B)       68/100   p = 5.2e-08
+handled  pid_only               20/100  vs  llm_checked (7B)       68/100   p = 8e-12
+handled  rules                  100/100  vs  llm_checked (7B)       68/100   p = 2.4e-11
+handled  rules                  100/100  vs  llm_nec (7B)           88/100   p = 0.00034
+handled  llm_checked (7B)       68/100  vs  llm_nec (7B)           88/100   p = 0.001
+unsafe   llm_checked (7B)       0/100  vs  llm_mismatch (7B)      7/100   p = 0.014
